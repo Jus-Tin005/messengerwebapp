@@ -1,0 +1,200 @@
+        html,body {
+                margin: 0;
+                padding: 0;
+        }
+
+
+        *{
+                box-sizing: border-box;
+        }
+
+
+        body {
+                height: 100vh;
+        }
+
+
+
+        .mainContainer {
+
+                max-width: 1024px;
+                /* height: 500px; */
+                margin: 0 auto;
+        }
+
+
+
+        .header {
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                border-bottom: 1px solid lightgray;
+                background-color: #fafafa;
+                opacity: 0.9;
+        
+
+
+
+        }
+
+        .logocontainer {
+                width: 50px;
+                height: 50px;
+        }
+
+        .logo {
+        width: 100%;  
+                
+        }
+
+        .menuContainer {
+
+        }
+
+        .menuItem{
+                text-decoration: none;
+                color: inherit;
+                margin-left: 30px;
+                font-size: 16px;
+        }
+
+        .menuItem:hover {
+                border-bottom-style: solid;
+        
+        }
+
+        .container {
+                display: flex;
+                flex-wrap: wrap;
+        
+        }
+
+        .left {
+        
+                display: inline-block;
+                width: 50%;
+        }
+
+        .inner {
+                
+                width: 50%;
+        }
+
+
+
+        .titleHeader {
+                margin-bottom: 20px;
+        }
+
+        .description {
+                margin-bottom: 20px;
+        }
+
+
+
+        .blockElement {
+                width: 300px;
+                height: 35px;
+                display: block;
+                padding: 0 20px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 15px;
+                font-size: 16px;
+                background-color: #F5F5F5;
+                outline: none;
+        }
+
+        .signInButton {
+                width: 100px;
+                height: 40px;
+                background-color:#0084ff;
+                font-size: 19px;
+                border-radius: 25px;
+                border: none;
+                color: #fff;
+                padding: 2px 20px 0;
+        }
+
+        .inputSpan {
+                margin-bottom: 20px;
+        }
+
+        .password {
+                margin-bottom: 20px;
+        }
+
+        .appStoreImage {
+                width: 70%;
+                
+        }
+
+        .right {
+                width: 50%;
+                display: inline-block;
+        }
+
+        .rightImage {
+                width: 70%;  /* if u give image sizes with %, the browser will give height as a default.*/
+                
+                
+
+        }
+
+        .footer {
+                margin-top: 150px;
+                padding: 50px;
+                text-align: center;
+                font-size: 30px;
+                background-color: #F5F5F5;
+
+
+        }
+
+        @media (max-width: 767px) {
+                .menuContainer {
+                        display: none;
+                }
+
+                .left {
+                        width: 100%;
+                        margin-bottom: 50px;
+                }
+
+                .inner {
+                        width: 100%;
+                        margin: 0 auto;
+                }
+
+                .right {
+                        width: 100;
+                
+                        overflow: hidden;
+                        
+
+                }
+
+                .rightImage {
+                        margin: 0 -50%;
+                }
+        }
+
+        @media (max-width: 375px) {
+                .inner {
+                        width: 95%;
+                }
+
+                .footer {
+                        margin-top: 30px;
+                        padding: 30px;
+                        font-size: 10px;
+                        background-color: #F5F5F5;
+                }
+
+        }
+                        
